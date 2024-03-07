@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/shop.css">
+</head>
+<body>
+	<div id="preloader-active">
+		<div class="preloader">
+						<div class="loader">
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						</div>
+		</div>
+</div>
+	<header>
+<!-- Modal start -->
+<div class="wrapper__modal" id="wrapper__modal">
+	<div class="overlay" id="overlay"></div>
+	<div class="modal__window" id="modal__window">
+	<div class="modal__content" id="modal__content">
+		<div><i class="fa fa-close btn_close"></i></div>
+		<h3>Заказать обратный звонок</h3>
+		<form action="mail.php" class="js-form" id="popupResult">
+			<div class="text-field callback">
+				<input class="text-field__input" type="text" id="name" name="firstName" placeholder="Имя" required>
+				<label class="text-field__label" for="firstName">Имя</label>
+			</div>
+			<div class="text-field callback">
+				<input class="text-field__input" type="email" id="email" name="email" placeholder="E-mail" required>
+				<label class="text-field__label" for="email">E-mail</label>
+			</div>
+			<div class="text-field callback">
+				<input class="text-field__input" type="tel" id="tel" name="tel" placeholder="Телефон" required>
+				<label class="text-field__label" for="tel">Телефон</label>
+			</div>
+			<button class="btn__form" data-submit>Заказать звонок</button>
+		</form>
+	</div>
+</div>
+</div>
+	<!--Modal succes  -->
+	<div class="modal__callback" id="modal__callback">
+		<div class="overlay" id="overlay"></div>
+		<div class="modal__window-callback" id="modal__window-callback">
+		<div class="modal__content-callback" id="modal__content-callback">
+			<h3>Отлично! Мы скоро вам перезвоним.</h3>
+			<button class="btn__callback">Закрыть</button>
+		</div>
+	</div>
+	</div>
+<!-- Modal end -->
+		<div class="container">
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item logo">
+						<a href="index.html"><img src="assets/photo/Logo.svg" alt="Logo"></a>
+					</li>
+						<div class="nav__item-social">
+						<li class="">
+							<a href="index.html" class="link">Главная</a>
+						</li>
+						<li class="">
+							<a href="shop.html" class="link">Магазин</a>
+						</li>
+						<li class="">
+							<a href="about.html" class="link">О бренде</a>
+						</li>
+						<li class="">
+							<a href="contact.html" class="link">Контакты</a>
+						</li>
+					</div>
+						<div class="nav__item-contact">
+							<li class="nav__item">
+								<div class="tell__wrapp">
+									<div class="tell__link">
+										<img src="assets/photo/telephone.svg" alt="telephone">
+								</div>
+								<div><a href="tel:+0827573099" class="link">+0827-57-3099</a></div>
+							</div>
+							</li>
+							<li class="nav__item nav__item_shopping-bag">
+								<span class="shopping-bag__item">2</span>
+								<a href="cart.html"><img src="assets/photo/shopping-bags.svg" alt="shopping-bags"></a>
+						</li>
+						<div class="mobile_menu-wrapp">
+							<div class="mobile_menu">
+									<i class="fa-solid fa-bars slicknav_btn"></i>		
+						</div>
+						<nav class="mobile__menu-nav"> 
+							<ul id="navigation" class="navigation">
+									<li><a href="index.html">Главная</a></li>
+									<li><a href="shop.html">Магазин</a></li>
+									<li><a href="about.html">О бренде</a></li>
+									<li><a href="contact.html">Контакты</a></li>
+							</ul>
+						</div>	
+					</div>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section class="breadcrumbs">
+		<div class="container">
+			<div class="breadcrumbs__wrapp">
+				<h1>Корзина</h1>
+				<p><a href="index.html">Главная — </a> <span class="p_color">Корзина</span></p>
+			</div>
+		</div>
+	</section>
+	<section class="cart">
+		<div class="container">
+			<div class="cart__wrapp">
+				<h4>Товар</h4>
+				<div class="cart__title">
+					<h4>Цена</h4>
+					<h4>Количество</h4>
+					<h4>Всего</h4>
+				</div>
+			</div>
+			<div class="cart__media">
+				<div class="media">
+					<span class="remove">x</span>
+					<div class="media-body">
+						<div class="img_flex">
+							<img src="assets/photo/cart_usa.png" alt="" />
+						</div>
+						<p>Футболка USA</p>
+					</div>
+				</div>
+				<div class="cart__info">
+					<p>$129</p>
+					<div class="product_count">
+						<input class="input-number" type="text" value="1" min="0" max="10">
+					</div>
+					<p>$129</p>
+				</div>
+			</div>
+			<div class="cart__btns">
+				<div class="cupon__wrapp">
+					<div class="text-field callback cupon_text-field">
+						<input class="text-field__input cupon__text-field__input" type="text" id="cupon" name="cupon" placeholder="Введите купон" required>
+						<label class="text-field__label" for="firstName">Введите купон</label>
+					</div>
+					<a class="btn__shop2" href="#">Применить купон</a>
+				</div>
+			<div>	<a class="btn__shop2" href="#">Обновить корзину</a></div>
+			</div>
+			<div class="div">
+				<div class="cart__price">
+					<div class="subtotal"><p>Подытог&nbsp;: &nbsp;$129</p></div>
+					<div class="cart__wrapp-total">
+						<div class="total total_w">
+							<h3>Итого:</h3>
+							<h3>$129</h3>
+						</div>
+						<a href="checkout.html" class="btn__shop2">Оформить заказ</a>
+					</div>		
+				</div>
+			</div>
+	</section>
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="footer__list">
+				<div class="footer__item">
+					<a href="index.html"><img src="assets/photo/Logo.svg" alt=""></a>
+					<div class="footer__item-text">
+						<p class="footer__item-policy">© Все права защищены</p>
+						<p class="footer__item-policy">Политика конфиденциальности</p>
+						<p class="footer__item-policy">Публичная оферта</p>
+					</div>
+				</div>
+					<div class="footer__list-wrapp">
+						<div class="">
+							<a href="index.html"  class="footer__item-title">Главная</a>
+						</div>
+						<div class="footer__item footer__item-shop" >
+							<div><a href="shop.html"  class="footer__item-title">Магазин</a></div>
+							<ul class="shop__items">
+								<li><a href="shop.html"  class="footer__item-p">Пальто</a></li>
+								<li><a href="shop.html"  class="footer__item-p">Свитшоты</a></li>
+								<li><a href="shop.html"  class="footer__item-p">Кардиганы</a></li>
+								<li><a href="shop.html"  class="footer__item-p">Толстовки</a></li>
+							</ul>
+						</div>
+						<div  class="">
+							<a href="about.html"  class="footer__item-title">О бренде</a>
+						</div>
+						<div  class="">
+							<a href="contact.html" class="footer__item-title">Контакты</a>
+						</div>
+					</div>
+				<div>
+					<div class="footer__info">
+					<div class="footer__contacts">
+						<div><a href="tel:+380448235412" class="footer__item-title">+38 (044) 823-54-12</a></div>
+						<div><a href="mailto:hello@womazing.com" class="footer__item-title">hello@womazing.com</a></div>
+					</div>
+						<div class="footer__socials">
+							<a href="#"><img src="assets/photo/instagram.svg" alt=""></a>
+							<a href="#"><img src="assets/photo/facebook.svg" alt=""></a>
+							<a href="#"><img src="assets/photo/twitter.svg" alt=""></a>
+						</div>
+						<div class="visa-mastercard">
+							<img src="assets/photo/visa-mastercard.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="assets/js/jquery-3.7.1.min.js"></script>
+	<script src="assets/js/jquery.validate.min.js"></script>
+	<script src="https://kit.fontawesome.com/17440211fa.js" crossorigin="anonymous"></script>
+	<script src="assets/js/modal.js"></script>
+</body>
+</html>
